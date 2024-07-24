@@ -93,14 +93,14 @@
     max-height: 306px;
     flex-shrink: 0;
 }
+.actions-content {
+    min-width: 50px;
+    min-height: 40px;
+}
 .media-content {
     height: 200px;
     min-height: 200px;
     max-height: 200px;
-}
-.actions-content {
-    min-width: 50px;
-    min-height: 40px;
 }
 .list {
     height: max-content;

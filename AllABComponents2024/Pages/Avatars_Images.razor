@@ -5,6 +5,16 @@
         <div class="row-layout group_1">
             <div class="column-layout group_2">
                 <div class="row-layout group_3">
+                    <IgbAvatar Size="SizableComponentSize.Large" Shape="AvatarShape.Circle" class="avatar" avatars_images-scope></IgbAvatar>
+                    <IgbAvatar Shape="AvatarShape.Rounded" Size="SizableComponentSize.Medium" class="avatar" avatars_images-scope></IgbAvatar>
+                    <IgbAvatar class="avatar" avatars_images-scope></IgbAvatar>
+                </div>
+                <p class="typography__subtitle-2 text">
+                    No image
+                </p>
+            </div>
+            <div class="column-layout group_2">
+                <div class="row-layout group_3">
                     <IgbAvatar Src="assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" Size="SizableComponentSize.Large" Shape="AvatarShape.Circle" class="avatar" avatars_images-scope></IgbAvatar>
                     <IgbAvatar Src="assets/7e86e8b8b495deb8eefcdd3556151a40532211e1.png" Shape="AvatarShape.Rounded" Size="SizableComponentSize.Medium" class="avatar" avatars_images-scope></IgbAvatar>
                     <IgbAvatar Src="assets/d4c387693b4db8c8354a14897762a46dcf820844.png" class="avatar" avatars_images-scope></IgbAvatar>
@@ -79,15 +89,9 @@
         </div>
         <div class="row-layout group_4">
             <IgbCard class="card" avatars_images-scope>
-                <IgbCardMedia class="media-content" avatars_images-scope>
-                    <img src="assets/start-building-dark.svg" class="image" />
-                </IgbCardMedia>
                 <IgbCardHeader>
-                    <div slot="thumbnail">
-                        <IgbAvatar Src="assets/Avatar13.png" Size="SizableComponentSize.Large" Shape="AvatarShape.Circle" class="avatar" avatars_images-scope></IgbAvatar>
-                    </div>
                     <h3 slot="title">
-                        Images from Assets
+                        No image
                     </h3>
                     <h5 slot="subtitle">
                         Subtitle goes here...
@@ -114,6 +118,40 @@
                         <span class="material-icons">
                             share
                         </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                </IgbCardActions>
+            </IgbCard>
+            <IgbCard class="card" avatars_images-scope>
+                <IgbCardMedia class="media-content" avatars_images-scope>
+                    <img src="assets/start-building-dark.svg" class="image" />
+                </IgbCardMedia>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Src="assets/Avatar13.png" Size="SizableComponentSize.Large" Shape="AvatarShape.Circle" class="avatar" avatars_images-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">
+                        Images from Assets
+                    </h3>
+                    <h5 slot="subtitle">
+                        Subtitle goes here...
+                    </h5>
+                </IgbCardHeader>
+                <IgbCardActions class="actions-content" avatars_images-scope>
+                    <IgbButton Variant="ButtonVariant.Flat" slot="start" Size="SizableComponentSize.Large" class="button" avatars_images-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbIconButton slot="end" Variant="IconButtonVariant.Flat">
+                        <span class="imx-icon imx-cement-mixer"></span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton slot="end" Variant="IconButtonVariant.Flat">
+                        <span class="imx-icon imx-bulldozer"></span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton slot="end" Variant="IconButtonVariant.Flat">
+                        <span class="imx-icon imx-brick-wall"></span>
                         <IgbRipple></IgbRipple>
                     </IgbIconButton>
                 </IgbCardActions>
@@ -161,6 +199,10 @@
         </div>
     </div>
     <div class="column-layout group">
+        <p class="typography__subtitle-2 text">
+            No image
+        </p>
+        <img class="image_1" />
         <p class="typography__subtitle-2 text">
             Image from Assets
         </p>
