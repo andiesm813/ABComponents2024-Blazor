@@ -1,0 +1,366 @@
+@page "/forms"
+@using Financial
+@using Models.Financial
+@inject IFinancialService FinancialService
+
+<div class="row-layout forms-container">
+    <div class="column-layout group">
+        <IgbInput Placeholder="Search" Outlined="true" class="user-input_2" forms-scope>
+            <span slot="prefix">
+                <span class="material-icons icon">
+                    search
+                </span>
+            </span>
+            <span slot="suffix">
+                <span class="material-icons icon">
+                    clear
+                </span>
+            </span>
+        </IgbInput>
+        <div class="row-layout group_1">
+            <IgbInput Outlined="true" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput Label="Just Label" Outlined="true" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+        </div>
+        <div class="row-layout group_1">
+            <IgbInput Placeholder="Just Placeholder" Outlined="true" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput Label="Label" Placeholder="Placeholder" Outlined="true" Value="@_value" Change="@(e => _value = e.Detail)" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+                <span slot="helper-text">sample hint text</span>
+            </IgbInput>
+        </div>
+        <div class="row-layout group_1">
+            <IgbInput DisplayType="InputType.Number" Label="Duration" Placeholder="Placholder" Outlined="true" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput DisplayType="InputType.Number" Label="Duration" Placeholder="Placholder" Outlined="true" Value="@_value1.ToString()" Change="@(e => _value1 = double.Parse(e.Detail))" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+        </div>
+        <div class="row-layout group_1">
+            <IgbInput DisplayType="InputType.Email" Label="Email address" Placeholder="Placeholder" Outlined="true" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        email
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput DisplayType="InputType.Password" Label="Password" Placeholder="Placeholder" Outlined="true" Value="@_value2" Change="@(e => _value2 = e.Detail)" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        lock
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+        </div>
+        <IgbInput DisplayType="InputType.Tel" Label="Phone" Placeholder="Placeholder" Outlined="true" Value="@_value3" Change="@(e => _value3 = e.Detail)" class="user-input_2" forms-scope>
+            <span slot="prefix">
+                <span class="material-icons icon">
+                    phone
+                </span>
+            </span>
+            <span slot="suffix">
+                <span class="material-icons icon">
+                    clear
+                </span>
+            </span>
+        </IgbInput>
+        <div class="row-layout group_1">
+            <IgbDatePicker Label="Date" Placeholder="Placeholder" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        calendar_month
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbDatePicker>
+            <IgbDatePicker Label="Date" class="date-picker" forms-scope></IgbDatePicker>
+        </div>
+        <IgbTextarea Label="Label/Placeholder" Placeholder="Text Area Content" Outlined="true" class="user-input_2" forms-scope></IgbTextarea>
+        <div class="row-layout group_1">
+            <IgbSelect Outlined="true" Label="Select" Placeholder="Placeholder" class="user-input" forms-scope>
+                <IgbSelectHeader>
+                    Option
+                </IgbSelectHeader>
+                <IgbSelectItem Value="Option">
+                    Option
+                </IgbSelectItem>
+                <IgbSelectItem Value="Option">
+                    Option
+                </IgbSelectItem>
+            </IgbSelect>
+            <IgbSelect Outlined="true" Label="Select" Placeholder="Placeholder" Value="@_value4" Change="@(e => _value4 = e.Detail.Value)" class="user-input" forms-scope>
+                <IgbSelectHeader>
+                    Option
+                </IgbSelectHeader>
+                <IgbSelectItem Value="1">
+                    Option
+                </IgbSelectItem>
+                <IgbSelectItem Value="Option">
+                    Option
+                </IgbSelectItem>
+            </IgbSelect>
+        </div>
+        <IgbCombo Outlined="true" Data="@_financialBoxOfficeRevenue" Label="Combo" Placeholder="Placeholder" DisplayKey="Franchise" SingleSelect="true" class="user-input_2" forms-scope></IgbCombo>
+    </div>
+    <div class="column-layout group">
+        <IgbInput Placeholder="Search" Outlined="false" class="user-input_2" forms-scope>
+            <span slot="prefix">
+                <span class="material-icons icon">
+                    search
+                </span>
+            </span>
+            <span slot="suffix">
+                <span class="material-icons icon">
+                    clear
+                </span>
+            </span>
+        </IgbInput>
+        <div class="row-layout group_1">
+            <IgbInput Outlined="false" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput Label="Just Label" Outlined="false" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+        </div>
+        <div class="row-layout group_1">
+            <IgbInput Placeholder="Just Placeholder" Outlined="false" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput Label="Label" Placeholder="Placeholder" Outlined="false" Value="@_value" Change="@(e => _value = e.Detail)" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+                <span slot="helper-text">sample hint text</span>
+            </IgbInput>
+        </div>
+        <div class="row-layout group_1">
+            <IgbInput DisplayType="InputType.Number" Label="Duration" Placeholder="Placholder" Outlined="false" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput DisplayType="InputType.Number" Label="Duration" Placeholder="Placholder" Outlined="false" Value="@_value1.ToString()" Change="@(e => _value1 = double.Parse(e.Detail))" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+        </div>
+        <div class="row-layout group_1">
+            <IgbInput DisplayType="InputType.Email" Label="Email address" Placeholder="Placeholder" Outlined="false" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        email
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput DisplayType="InputType.Password" Label="Password" Placeholder="Placeholder" Outlined="false" Value="@_value2" Change="@(e => _value2 = e.Detail)" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        lock
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+        </div>
+        <IgbInput DisplayType="InputType.Tel" Label="Phone" Placeholder="Placeholder" Outlined="false" Value="@_value3" Change="@(e => _value3 = e.Detail)" class="user-input_2" forms-scope>
+            <span slot="prefix">
+                <span class="material-icons icon">
+                    phone
+                </span>
+            </span>
+            <span slot="suffix">
+                <span class="material-icons icon">
+                    clear
+                </span>
+            </span>
+        </IgbInput>
+        <div class="row-layout group_1">
+            <IgbDatePicker Label="Date" Placeholder="Placeholder" class="user-input" forms-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        calendar_month
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbDatePicker>
+            <IgbDatePicker Label="Date" class="date-picker" forms-scope></IgbDatePicker>
+        </div>
+        <IgbTextarea Label="Label/Placeholder" Placeholder="Text Area Content" Outlined="false" class="user-input_2" forms-scope></IgbTextarea>
+        <div class="row-layout group_1">
+            <IgbSelect Outlined="false" Label="Select" Placeholder="Placeholder" class="user-input" forms-scope>
+                <IgbSelectHeader>
+                    Option
+                </IgbSelectHeader>
+                <IgbSelectItem Value="Option">
+                    Option
+                </IgbSelectItem>
+                <IgbSelectItem Value="Option">
+                    Option
+                </IgbSelectItem>
+            </IgbSelect>
+            <IgbSelect Outlined="false" Label="Select" Placeholder="Placeholder" Value="@_value4" Change="@(e => _value4 = e.Detail.Value)" class="user-input" forms-scope>
+                <IgbSelectHeader>
+                    Option
+                </IgbSelectHeader>
+                <IgbSelectItem Value="1">
+                    Option
+                </IgbSelectItem>
+                <IgbSelectItem Value="Option">
+                    Option
+                </IgbSelectItem>
+            </IgbSelect>
+        </div>
+        <IgbCombo Data="@_financialBoxOfficeRevenue" Label="Combo" Placeholder="Placeholder" DisplayKey="Franchise" Outlined="false" SingleSelect="true" class="user-input_2" forms-scope></IgbCombo>
+    </div>
+</div>
+
+@code {
+    private string _value = "5";
+    private double _value1 = 10;
+    private string _value2 = "vvxcvxcvxcv";
+    private string _value3 = "cvxcvxcvxc";
+    private string _value4 = "1";
+    private List<BoxOfficeRevenueType> _financialBoxOfficeRevenue = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _financialBoxOfficeRevenue = await FinancialService.GetBoxOfficeRevenue();
+        await base.OnInitializedAsync();
+    }
+}

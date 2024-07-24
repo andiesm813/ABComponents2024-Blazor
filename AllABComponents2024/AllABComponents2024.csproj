@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IgniteUI.Blazor" Version="23.2.257" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Shared/MainLayout.razor.css" CssScope="master_view-scope" />
+    <None Update="Pages/AllComponents.razor.css" CssScope="all_components-scope" />
+    <None Update="Pages/Avatars_Images.razor.css" CssScope="avatars_images-scope" />
+    <None Update="Pages/Calendar.razor.css" CssScope="calendar-scope" />
+    <None Update="Pages/Forms.razor.css" CssScope="forms-scope" />
+    <None Update="Pages/Radiogroup.razor.css" CssScope="radiogroup-scope" />
+    <None Update="Pages/Stepper.razor.css" CssScope="stepper-scope" />
+  </ItemGroup>
+
+</Project>

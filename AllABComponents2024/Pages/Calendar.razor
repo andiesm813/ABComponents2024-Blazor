@@ -1,0 +1,22 @@
+@page "/calendar"
+
+<div class="row-layout calendar-container">
+    <div class="row-layout group">
+        <div class="column-layout group_1">
+            <p class="typography__subtitle-2 text">
+                No selected date
+            </p>
+            <IgbCalendar HideHeader="false" class="calendar" calendar-scope></IgbCalendar>
+        </div>
+        <div class="column-layout group_1">
+            <p class="typography__subtitle-2 text">
+                With selected date
+            </p>
+            <IgbCalendar HideHeader="false" @bind-Value="@_value" class="calendar" calendar-scope></IgbCalendar>
+        </div>
+    </div>
+</div>
+
+@code {
+    private DateTime _value = DateTime.Parse("2024-07-23T00:00");
+}

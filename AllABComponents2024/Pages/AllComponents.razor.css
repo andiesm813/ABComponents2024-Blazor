@@ -1,0 +1,409 @@
+.column-layout {
+    display: flex;
+    flex-direction: column;
+}
+.all-components-container {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    overflow: auto;
+    height: 100%;
+}
+.row-layout {
+    display: flex;
+}
+.group {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 24px;
+    overflow: auto;
+    position: relative;
+    padding: 20px;
+    min-width: 50px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.group_1 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 24px;
+    position: relative;
+    min-width: 400px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.tabs {
+    min-width: 0;
+    min-height: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.accordion {
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+.group_2 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.group_3 {
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 0.5rem;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.card {
+    height: max-content;
+    min-width: 320px;
+    flex-direction: row;
+}
+.group_4 {
+    flex-grow: 1;
+}
+.card_1 {
+    height: max-content;
+    min-width: 320px;
+}
+.group_5 {
+    width: 100%;
+}
+.group_6 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    overflow: auto;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.group_7 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    position: relative;
+    min-width: 420px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.group_8 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 16px;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.group_9 {
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 8px;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.group_10 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    position: relative;
+    padding: 8px 0;
+    min-width: 50px;
+    min-height: 50px;
+    flex-shrink: 0;
+}
+.group_11 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 8px;
+    position: relative;
+}
+.group_12 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 8px;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.group_13 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 8px;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.group_14 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.group_15 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 24px;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+    flex-shrink: 0;
+}
+.card_2 {
+    width: 320px;
+    height: max-content;
+    min-width: 320px;
+    max-width: 320px;
+}
+.group_16 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 24px;
+    position: relative;
+    padding: 24px;
+    min-width: 50px;
+    min-height: 50px;
+    flex-shrink: 0;
+}
+.tab-item-content {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 24px;
+    overflow: auto;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.tab-item-content_1 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    overflow: auto;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.range-slider {
+    height: max-content;
+    min-width: 50px;
+}
+.stepper {
+    min-width: 0;
+    min-height: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.step-content {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 10px;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.tab-item-content_2 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    overflow: auto;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.body-content {
+    min-width: 50px;
+    min-height: 50px;
+}
+.media-content {
+    width: 96px;
+    min-width: 96px;
+    max-width: 96px;
+}
+.media-content_1 {
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+}
+.actions-content {
+    min-width: 50px;
+    min-height: 40px;
+}
+.media-content_2 {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+}
+.divider {
+    display: none;
+}
+.actions-content_1 {
+    flex-direction: column;
+    align-items: end;
+    min-width: 50px;
+    min-height: 40px;
+}
+.step-content_1 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 24px;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.media-content_3 {
+    height: 120px;
+    min-height: 120px;
+    max-height: 120px;
+}
+.text {
+    height: max-content;
+    min-width: min-content;
+}
+.icon {
+    --size: 24px;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+}
+.avatar::part(base) {
+    background-color: transparent;
+}
+.image {
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.icon_1 {
+    --size: 18px;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+.icon_2 {
+    --size: 36px;
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+}
+.icon_3 {
+    --size: 48px;
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+}
+.calendar {
+    width: max-content;
+    height: max-content;
+    min-width: max-content;
+}
+.avatar_1::part(base) {
+    background-color: transparent;
+}
+.avatar_2::part(base) {
+    background-color: transparent;
+}
+.avatar_3::part(base) {
+    background-color: transparent;
+}
+.avatar_4::part(base) {
+    background-color: transparent;
+}
+.list {
+    height: max-content;
+}
+.tree {
+    min-width: max-content;
+    min-height: max-content;
+}
+.grid {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.slider {
+    height: max-content;
+    min-width: 50px;
+}
+.button {
+    height: max-content;
+    flex-shrink: 0;
+}
+.button_1 {
+    height: max-content;
+}
+.user-input {
+    height: max-content;
+    min-width: min-content;
+}
+.user-input_2 {
+    width: max-content;
+    height: max-content;
+}
+.radio {
+    padding: 8px;
+}
+.date-picker {
+    height: max-content;
+    min-width: 120px;
+}
+.badge {
+    width: max-content;
+    height: max-content;
+}
+.notification {
+    height: max-content;
+    min-width: min-content;
+}
+.category-chart {
+    min-width: 400px;
+    min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+}

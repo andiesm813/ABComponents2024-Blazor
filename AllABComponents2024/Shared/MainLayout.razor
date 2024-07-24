@@ -1,0 +1,188 @@
+@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<div class="column-layout master-view-container">
+    <IgbNavbar class="navbar" master_view-scope>
+        <IgbIconButton slot="start" Variant="IconButtonVariant.Flat">
+            <span class="material-icons">
+                menu
+            </span>
+            <IgbRipple></IgbRipple>
+        </IgbIconButton>
+        <div class="row-layout group">
+            <h6 class="h6">
+                All AB Components 2024
+            </h6>
+        </div>
+        <IgbIconButton slot="end" Variant="IconButtonVariant.Flat">
+            <span class="material-icons">
+                search
+            </span>
+            <IgbRipple></IgbRipple>
+        </IgbIconButton>
+        <IgbIconButton slot="end" Variant="IconButtonVariant.Flat">
+            <span class="material-icons">
+                favorite
+            </span>
+            <IgbRipple></IgbRipple>
+        </IgbIconButton>
+        <IgbIconButton slot="end" Variant="IconButtonVariant.Flat">
+            <span class="material-icons">
+                more_vert
+            </span>
+            <IgbRipple></IgbRipple>
+        </IgbIconButton>
+    </IgbNavbar>
+    <div class="row-layout group_1">
+        <IgbNavDrawer Open="true" Position="NavDrawerPosition.Relative" class="nav-drawer" master_view-scope>
+            <IgbNavDrawerHeaderItem>
+                <div>Component Pages</div>
+            </IgbNavDrawerHeaderItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/all-components"))">
+                <span slot="icon">
+                    <span class="imx-icon imx-development icon"></span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">All Components</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/avatars_images"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        image
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Avatars &amp; Images</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/calendar"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        calendar_month
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Calendar</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/forms"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        dynamic_form
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Forms</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/radiogroup"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        radio_button_checked
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Radio Group</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/stepper"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        123
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Stepper</div>
+            </IgbNavDrawerItem>
+        </IgbNavDrawer>
+        <div class="view-container">
+            @Body
+        </div>
+        <IgbNavDrawer Position="NavDrawerPosition.Relative" class="nav-drawer" master_view-scope>
+            <div slot="mini">
+                <IgbNavDrawerHeaderItem>
+                    <span slot="icon">
+                        <span class="material-icons icon">
+                            account_circle
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </span>
+                </IgbNavDrawerHeaderItem>
+                <IgbNavDrawerItem @onclick="@(e => Navigate("/all-components"))">
+                    <span slot="icon">
+                        <span class="material-icons icon">
+                            account_circle
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </span>
+                </IgbNavDrawerItem>
+                <IgbNavDrawerItem @onclick="@(e => Navigate("/radiogroup"))">
+                    <span slot="icon">
+                        <span class="material-icons icon">
+                            account_circle
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </span>
+                </IgbNavDrawerItem>
+                <IgbNavDrawerItem @onclick="@(e => Navigate("/stepper"))">
+                    <span slot="icon">
+                        <span class="material-icons icon">
+                            account_circle
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </span>
+                </IgbNavDrawerItem>
+                <IgbNavDrawerItem>
+                    <span slot="icon">
+                        <span class="material-icons icon">
+                            account_circle
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </span>
+                </IgbNavDrawerItem>
+            </div>
+            <IgbNavDrawerHeaderItem>
+                <div>Component Pages</div>
+            </IgbNavDrawerHeaderItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/all-components"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        account_circle
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">All Components</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/radiogroup"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        account_circle
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Radio Group</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/stepper"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        account_circle
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Stepper</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem>
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        account_circle
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+            </IgbNavDrawerItem>
+        </IgbNavDrawer>
+    </div>
+</div>
+
+@code {
+
+    public void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

@@ -1,0 +1,54 @@
+@page "/radiogroup"
+
+<div class="row-layout radiogroup-container">
+    <div class="row-layout group">
+        <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" value="@_value" change="@(e => _value = e.value)" class="radio-group" radiogroup-scope>
+            <IgbRadio Value="1" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="2" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="3" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+        </IgbRadioGroup>
+        <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" value="@_value" change="@(e => _value = e.value)" class="radio-group" radiogroup-scope>
+            <IgbRadio Value="1" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="2" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="3" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+        </IgbRadioGroup>
+        <IgbRadioGroup value="@_value" change="@(e => _value = e.value)" class="radio-group" radiogroup-scope>
+            <IgbRadio Value="1" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="2" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="3" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+        </IgbRadioGroup>
+        <IgbRadioGroup value="@_value" change="@(e => _value = e.value)" class="radio-group" radiogroup-scope>
+            <IgbRadio Value="1" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="2" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="3" class="radio" radiogroup-scope>
+                Label
+            </IgbRadio>
+        </IgbRadioGroup>
+    </div>
+</div>
+
+@code {
+    private string _value = "1";
+}

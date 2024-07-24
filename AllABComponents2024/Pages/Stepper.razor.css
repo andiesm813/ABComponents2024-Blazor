@@ -1,0 +1,57 @@
+.row-layout {
+    display: flex;
+}
+.stepper-container {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 24px;
+    height: 100%;
+}
+.group {
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 0.5rem;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.stepper {
+    min-width: 0;
+    min-height: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.column-layout {
+    display: flex;
+    flex-direction: column;
+}
+.step-content {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 10px;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.user-input {
+    height: max-content;
+    min-width: min-content;
+}
+.button {
+    height: max-content;
+    flex-shrink: 0;
+}
+.date-picker {
+    height: max-content;
+    min-width: 120px;
+}
+.text {
+    height: max-content;
+    min-width: min-content;
+}
