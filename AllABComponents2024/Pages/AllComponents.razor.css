@@ -15,7 +15,7 @@
 .group {
     justify-content: flex-start;
     align-items: stretch;
-    align-content: flex-start;
+    align-content: stretch;
     gap: 24px;
     overflow: auto;
     position: relative;
@@ -31,7 +31,7 @@
     align-content: flex-start;
     gap: 24px;
     position: relative;
-    min-width: 400px;
+    min-width: 320px;
     min-height: 50px;
     flex-grow: 1;
     flex-basis: 0;
@@ -86,7 +86,7 @@
     gap: 16px;
     overflow: auto;
     position: relative;
-    min-width: 50px;
+    min-width: 320px;
     min-height: 50px;
     flex-grow: 1;
     flex-basis: 0;
@@ -165,7 +165,7 @@
     align-content: flex-start;
     gap: 16px;
     position: relative;
-    min-width: 50px;
+    min-width: 240px;
     min-height: 50px;
     flex-grow: 1;
     flex-basis: 0;
@@ -354,6 +354,18 @@
     background-color: transparent;
 }
 .avatar_4::part(base) {
+    background-color: transparent;
+}
+.avatar_5::part(base) {
+    background-color: transparent;
+}
+.avatar_6::part(base) {
+    background-color: transparent;
+}
+.avatar_7::part(base) {
+    background-color: transparent;
+}
+.avatar_8::part(base) {
     background-color: transparent;
 }
 .list {
