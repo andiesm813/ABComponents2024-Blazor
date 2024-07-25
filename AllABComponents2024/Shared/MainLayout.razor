@@ -72,6 +72,15 @@
                 </span>
                 <div slot="content">Forms</div>
             </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("/forms"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        view_list
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Lists</div>
+            </IgbNavDrawerItem>
             <IgbNavDrawerItem @onclick="@(e => Navigate("/radiogroup"))">
                 <span slot="icon">
                     <span class="material-icons icon">
