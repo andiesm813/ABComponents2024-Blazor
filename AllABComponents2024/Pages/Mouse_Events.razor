@@ -1,0 +1,81 @@
+@page "/mouse_events"
+
+<div class="column-layout mouse-events-container">
+    <div class="column-layout group">
+        <div class="column-layout group_1">
+            <IgbButton Size="SizableComponentSize.Large" class="button" mouse_events-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Size="SizableComponentSize.Large" class="button" mouse_events-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Outlined" Size="SizableComponentSize.Large" class="button" mouse_events-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Outlined" Size="SizableComponentSize.Large" class="button" mouse_events-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" Size="SizableComponentSize.Large" class="button" mouse_events-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" Size="SizableComponentSize.Large" class="button" mouse_events-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Fab" Size="SizableComponentSize.Large" class="button_1" mouse_events-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Fab" Size="SizableComponentSize.Large" class="button_1" mouse_events-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>FAB</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" mouse_events-scope>
+                <span class="material-icons">
+                    email
+                </span>
+                <IgbRipple></IgbRipple>
+            </IgbIconButton>
+        </div>
+        <IgbList class="list" mouse_events-scope>
+            <IgbListHeader>Header</IgbListHeader>
+            <IgbListItem>
+                <div slot="title">Single Line Item Default</div>
+                <span slot="end" class="material-icons icon">
+                    keyboard_arrow_right
+                </span>
+            </IgbListItem>
+            <IgbListItem>
+                <div slot="title">Single Line Item Default</div>
+            </IgbListItem>
+            <IgbListItem>
+                <div slot="title">Single Line Item Default</div>
+                <span slot="end" class="material-icons icon">
+                    keyboard_arrow_right
+                </span>
+            </IgbListItem>
+        </IgbList>
+    </div>
+</div>
+
+@code {
+}

@@ -16,8 +16,11 @@
     <None Update="Pages/AllComponents.razor.css" CssScope="all_components-scope" />
     <None Update="Pages/Avatars_Images.razor.css" CssScope="avatars_images-scope" />
     <None Update="Pages/Calendar.razor.css" CssScope="calendar-scope" />
+    <None Update="Pages/Cards.razor.css" CssScope="cards-scope" />
+    <None Update="Pages/Charts.razor.css" CssScope="charts-scope" />
     <None Update="Pages/Forms.razor.css" CssScope="forms-scope" />
     <None Update="Pages/Lists.razor.css" CssScope="lists-scope" />
+    <None Update="Pages/Mouse_Events.razor.css" CssScope="mouse_events-scope" />
     <None Update="Pages/Radiogroup.razor.css" CssScope="radiogroup-scope" />
     <None Update="Pages/Stepper.razor.css" CssScope="stepper-scope" />
   </ItemGroup>
