@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using AllABComponents2024;
 using AllABComponents2024.Financial;
 using AllABComponents2024.Northwind;
+using AllABComponents2024.DashboardData;
 using IgniteUI.Blazor.Controls;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
@@ -12,6 +13,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddScoped<IFinancialService, FinancialService>();
 builder.Services.AddScoped<INorthwindService, NorthwindService>();
+builder.Services.AddScoped<IDashboardDataService, DashboardDataService>();
 RegisterIgniteUI(builder.Services);
 
 await builder.Build().RunAsync();

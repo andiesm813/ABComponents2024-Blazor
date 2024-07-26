@@ -1,0 +1,27 @@
+@page "/charts"
+@using DashboardData
+@using Models.DashboardData
+@inject IDashboardDataService DashboardDataService
+
+<div class="column-layout charts-container">
+    <div class="column-layout group">
+        <p class="typography__subtitle-2 text">
+            Chart With Default Palette
+        </p>
+        <IgbCategoryChart DataSource="@_dashboardDataTeamGrowth" ChartType="CategoryChartType.Area" ComputedPlotAreaMarginMode="ComputedPlotAreaMarginMode.Series" class="category-chart" charts-scope></IgbCategoryChart>
+        <p class="typography__subtitle-2 text">
+            Chart With Custom Palette
+        </p>
+        <IgbCategoryChart DataSource="@_dashboardDataTeamGrowth" ChartType="CategoryChartType.Area" ComputedPlotAreaMarginMode="ComputedPlotAreaMarginMode.Series" class="category-chart_1" charts-scope></IgbCategoryChart>
+    </div>
+</div>
+
+@code {
+    private List<TeamGrowthType> _dashboardDataTeamGrowth = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _dashboardDataTeamGrowth = await DashboardDataService.GetTeamGrowthList();
+        await base.OnInitializedAsync();
+    }
+}

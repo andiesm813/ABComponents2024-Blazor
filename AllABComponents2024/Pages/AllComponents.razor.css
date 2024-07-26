@@ -17,7 +17,6 @@
     align-items: stretch;
     align-content: stretch;
     gap: 24px;
-    overflow: auto;
     position: relative;
     padding: 20px;
     min-width: 50px;
